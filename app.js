@@ -3,6 +3,15 @@ const path = require('path');
 const app = express();
 
 
+const CONTACTS = [
+    {id: 1, name: 'Dmitry', value: '3105025867', marked: false}
+]
+
+app.get('/api/contacts', (req, res) => {
+    res.status(200).json(CONTACTS)
+})
+
+
 
 
 
